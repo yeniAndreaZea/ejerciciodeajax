@@ -1,4 +1,7 @@
 <?php 
+
+ 
+if(isset($_POST['grado'])){ 
 	$miGrado = $_POST['grado'];
 
 	$arrPrimero = array('Danza', 'Teatro', 'Dibujo'); 
@@ -79,36 +82,39 @@
 	echo $miSelect;
 
 
+}
 
-	if(isset($_POST["ENVIAR"])){
-		$nombre=$_POST["nombre"];
+
+	if(isset($_POST["suma"])){
+		$nombre=$_POST["name"];
 		$apellido=$_POST["apellido"];
 		$valor=$_POST["valor"];
 		$grado=$_POST["selectGrado"];
 
-		$cultura=$_POST['otro'];
-
-		if($grado == "primero"){
-			$valor ==35.000;
+		$cultura=$_POST['alumno'];
+		if($grado == "Primero"){
+			$valor +=35000;
 		}
-		if($grado == "segundo"){
-			$valor ==70000;
+		if($grado == "Segundo"){
+			$valor +=70000;
 			
 		}
 		if($cultura == "Danza"){
-			$valor ==($valor*0.2);
+			$valor +=($valor*0.2);
 			
 		}
 		if($cultura == "Musica"){
-			$valor ==($valor*0.3);
+			$valor +=($valor*0.3);
 			
 		}
 		if($cultura == "Dibujo"){
-			$valor ==($valor*0.35);
+			$valor += ($valor* 0.35);
 			
 		}
-		echo "<br><br>EL ALUMNO".$nombre."TIENE QUE PAGAR POR LA MATRICULA".$valor;
+		echo "<br><br>EL ALUMNO " .$nombre. " ".$apellido. " TIENE QUE PAGAR UN VALOR DE  " .$valor;
 
 
 	}
+
+
  ?>

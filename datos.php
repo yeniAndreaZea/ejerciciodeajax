@@ -19,7 +19,7 @@
         <label for="opcion">APELLIDOS DEL ALUMNO </label>
         <input type= "text" name="apellido"><br>
    <BR>
-	<form action="opciones.php">
+	 
 		<label for="opcion">CURSOS </label>
 		<select id="selectGrado" name="selectGrado">
 			<option value=""></option>
@@ -30,12 +30,12 @@
 		
 		<div id="resultado"></div>
 		<BR>
-	<form action="opciones.php">
+	 
 		<label for="opcion">VALOR </label>
-		<select id="selectGrado" name="selectGrado">
+		<select id="valor" name="valor">
 			<option value=""></option>
-			<option value="Primero">35.000</option>
-			<option value="Segundo">70.000</option>
+			<option value="35000">35.000</option>
+			<option value="70000">70.000</option>
 	
 			
 		</select>
@@ -45,7 +45,7 @@
 </br>
 	</form>
 </form>
-	
+
 
 	<script>
 		
